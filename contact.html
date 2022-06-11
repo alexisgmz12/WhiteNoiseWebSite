@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+         <title>White Noise Lashes and Nails</title>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <nav id="navBar" class="navBar">
+            <!--navbar de pag web-->
+            <div class="navBarWebsiteVisibility">
+                <div class="d-flex" style="height: 100%;">
+                    <div class="" style="width:30%;">
+                        <img onclick="changeHTML('Home')" src="./ImagesForWeb/LOGOLETRAS.png" alt="" class="imgRounded ml-3 mt-3 mb-3">
+                    </div>
+                    <div class="d-flex align-items-center" style="width:80%;">
+                        <div class="d-flex justify-content-around" style="width: 100%;">
+                            <div class="divServicesToHover">
+                                    <p onclick="changeHTML('Servicios')" class="mb-1">Servicios</p> 
+                                <div class="growHorizontallyServices"></div>
+                            </div>
+                            <div class="divPromocionesToHover">
+                                <p class="mb-1" onclick="changeHTML('Promo')">Promociones</p>
+                                <div class="growHorizontallyPromociones"></div>
+                            </div>
+                            <div class="divContactToHover">
+                                <p class="mb-1" onclick="changeHTML('Contact')">Contacto</p>
+                                <div class="growHorizontallyContact"></div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div></div>
+                </div>
+            </div>
+            <!--navbar de pag movil-->
+            <div class="navBarDeviceVisibility">
+                <div class="d-flex justify-content-between">
+                    <!--Icon-->
+                    <div class="d-flex align-item-center">
+                        <div class="d-flex justify-content-start">
+                            <img class="iconHomeRounded" src="./ImagesForWeb/PHOTO-2022-02-13-00-39-21.jpg" 
+                            alt="" style="padding: 3px; width: 35%; height: auto;" onclick="changeHTML('Home')">
+                        </div>
+                    </div>
+                    <!--Sandwich menu-->
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex justify-content-center">
+                            <div style="position:realtive">
+                                <img src="./ImagesForWeb/Icons/icons8-menu-512.png" 
+                                style="width: 35%;height: auto;" alt=""
+                                id="sandwichMenuNavBar" onclick="showMenu()">
+                                <div id="menuToShowNaviation" class="menuHidden" >
+                                    <div style="padding: 15px;">
+                                        <div class="mb-3" onclick="changeHTML('Servicios')">
+                                            <p class="borderBottom m-0 p-0" >Servicios</p>
+                                        </div>
+                                        <div class="mb-3" onclick="changeHTML('Promo')">
+                                            <p class="borderBottom m-0 p-0">Promociones</p>
+                                        </div>
+                                        <div class="mb-3" onclick="changeHTML('Contact')">
+                                            <p class="borderBottom m-0 p-0">Contacto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="divMainContacto mt-4">
+                <!--Numeros-->
+                <div class="d-flex justify-content-center appearContactNumbers">
+                    <div>
+                        <!--Heading-->
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex">
+                                <h4>Contáctanos para gendar tu cita</h4>
+                                <img src="./ImagesForWeb/Icons/icons8-whatsapp-384-3.png" alt="" class="sizeOfIcons ml-1">
+                            </div>
+                        </div>
+                        <!--Content-->
+                        <div class="d-flex justify-content-center">
+                            <div>
+                                <p onclick="window.open('tel:5558788564');" class="pBlackAndGrow ml-2">5558788564</p>
+                                <p onclick="window.open('tel:5588088117');" class="pBlackAndGrow ml-2">5588088117</p>
+                                <p onclick="window.open('tel:5592366072');" class="pBlackAndGrow ml-2">5592366072</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--Mapa-->
+                <div d-flex justify-content-center>
+                    <!--Ubicacion-->
+                    <div class="">                  
+                        <div class="d-flex justify-content-center mb-2">
+                            <img src="./ImagesForWeb/Icons/icons8-marcador-100.png" class="sizeOfIcons ml-2" alt="">
+                            <!-- https://maps.google.com/?q=<lat>,<lng> -->
+                            <a class="ml-2" href="https://www.google.com.mx/maps/place/White+Noise+LN/@19.2839259,-99.1775373,17z/data=!3m1!4b1!4m5!3m4!1s0x85ce01f71b19c5a3:0x71b94ef1cd9a09ba!8m2!3d19.2839259!4d-99.1753433">
+                                Av. Insurgentes Sur 4110, Sta Úrsula Xitla, Tlalpan, 14420 Ciudad de México, CDMX
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15063.856532093694!2d-99.1753433!3d19.2839259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71b94ef1cd9a09ba!2sWhite%20Noise%20LN!5e0!3m2!1ses-419!2smx!4v1654920837122!5m2!1ses-419!2smx" 
+                            width="600" height="250" style="border:0;" allowfullscreen="" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="navBar" style="background-color: black; width:100%">
+            <div class="container">
+                <div class="row">
+                    <!--Contacto-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                        <h5 class="pWhite text-center">Comunicate con nosotros dando click en los siguientes números</h5>
+                            <div class="d-flex divSelector justify-content-center">
+                                <img class="sizeOfIcons" src="./ImagesForWeb/Icons/icons8-whatsapp-480.png" alt="">
+                                <a href="tel:5558788564" class="pWhite ml-2">5558788564</a>
+                            </div>
+                        <div class="d-flex divSelector justify-content-center">
+                            <img class="sizeOfIcons" src="./ImagesForWeb/Icons/icons8-whatsapp-480.png" alt="">
+                            <a href="tel:5588088117" class="pWhite ml-2">5588088117</a>
+                        </div>
+                        
+                        <div class="d-flex divSelector justify-content-center">
+                            <img class="sizeOfIcons" src="./ImagesForWeb/Icons/icons8-telephone-64-2.png" alt="">
+                            <a href="tel:5592366072" class="pWhite ml-2">5592366072</a>
+                        </div>
+                        
+                    </div>
+                    <!--Horario-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                        <h5 class="pWhite text-center pb-0 mb-0">Horario de atención</h5>
+                        <p class="pWhite text-center mb-0 pb-0 pt-0">Martes - Sabados </p>
+                        <p class="pWhite text-center mt-0 pt-0">10 am- 8pm</p>
+                        <p class="pWhite text-center mb-0 pb-0">Lunes y Domingos</p>
+                        <p class="pWhite text-center mt-0">Sólo citas</p>
+                    </div>
+                    <!--Redes sociales-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                        <h5 class="pWhite text-center">Siguenos en </h5>
+                        <div class="d-flex justify-content-center divSelector">
+                            <img class="sizeOfIcons" src="./ImagesForWeb/Icons/icons8-instagram-480.png" alt="">
+                            <a href="https://www.instagram.com/whitenoiseln/" class="pWhite ml-2">whitenoiseln</a>
+                        </div>
+                        <div class="d-flex justify-content-center divSelector">
+                            <img class="sizeOfIcons" src="./ImagesForWeb/Icons/icons8-facebook-500.png" alt="">
+                            <a href="https://www.facebook.com/White-Noise-107778471751597" class="pWhite ml-2">White Noise</a>
+                        </div>
+                        <div class="d-flex justify-content-center divSelector">
+                            <img class="sizeOfIcons" src="./ImagesForWeb/Icons/icons8-tik-tok-500-2.png" alt="">
+                            <a href="https://www.tiktok.com/@whitenoiseln" class="pWhite ml-2">whitenoiseln</a>
+                        </div>
+                    </div>
+                    <!--Ubicacion-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                                            
+                        <div class="d-flex justify-content-center divSelector">
+                            <img src="./ImagesForWeb/Icons/icons8-marcador-96.png" class="sizeOfIcons" alt="">
+                            <!-- https://maps.google.com/?q=<lat>,<lng> -->
+                            <a class="mb-2 text-light" href="https://www.google.com.mx/maps/place/White+Noise+LN/@19.2839259,-99.1775373,17z/data=!3m1!4b1!4m5!3m4!1s0x85ce01f71b19c5a3:0x71b94ef1cd9a09ba!8m2!3d19.2839259!4d-99.1753433">
+                                Av. Insurgentes Sur 4110, Sta Úrsula Xitla, Tlalpan, 14420 Ciudad de México, CDMX
+                            </a>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15063.856532093694!2d-99.1753433!3d19.2839259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71b94ef1cd9a09ba!2sWhite%20Noise%20LN!5e0!3m2!1ses-419!2smx!4v1654920837122!5m2!1ses-419!2smx" 
+                        width="300" height="250" style="border:0;" allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

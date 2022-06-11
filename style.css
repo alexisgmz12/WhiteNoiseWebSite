@@ -1,0 +1,409 @@
+.navBar{
+    background-color: transparent;
+    height: fit-content;
+    color: black;
+    transition: 0.3s;
+}
+.navBar:hover{
+    background-color: black;
+    color: white !important;
+}
+.divServicesToHover{
+    background-color: transparent;
+}
+.growHorizontallyServices{
+    height: 1px;
+    background-color: white;
+    width: 0px;
+    animation-fill-mode: forwards;
+    transition: width 1s;
+}
+.divServicesToHover:hover > .growHorizontallyServices{    
+    width: 65px;
+    background-color: white;
+}
+.divPromocionesToHover{
+    background-color: transparent;
+}
+.growHorizontallyPromociones{
+    height: 1px;
+    background-color: white;
+    width: 0px;
+    animation-fill-mode: forwards;
+    transition: width 1s;
+}
+.divPromocionesToHover:hover > .growHorizontallyPromociones{    
+    width: 95px;
+    background-color: white;
+}
+.divContactToHover{
+    background-color: transparent;
+}
+.growHorizontallyContact{
+    height: 1px;
+    background-color: white;
+    width: 0px;
+    animation-fill-mode: forwards;
+    transition: width 1s;
+}
+.divContactToHover:hover > .growHorizontallyContact{    
+    width: 70px;
+    background-color: white;
+}
+.pWhite{
+    color: white;
+}
+.sizeOfIcons{
+    width: 30px;
+    height: 30px;
+}
+.divSelector{
+    background-color: black;
+    transition: 0.3s;
+}
+.divSelector:hover{
+    background-color: rgb(71, 71, 71);
+    border-radius: 15px;
+}
+.divHeight{
+ height: 100%;
+}
+.imgRounded{
+    height:auto;
+    width:180px;
+}
+.imgNails{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border: black solid 2px;
+}
+.divRombo{
+    transform: rotate(45deg);
+    border: black solid 4px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation: romboLashesAnim 12s linear infinite;
+}
+.imgLashes{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border: #3e88eb solid 5px;
+}
+.divRomboLashes{
+    transform: rotate(45deg);
+    border: #3e88eb solid 5px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation: romboLashesAnim 12s linear infinite;
+
+}
+.divSection1{
+    background-color: black;
+}
+.divImgForCascadeAnimation{
+    width: 20%;
+    height: auto;
+    opacity: 0;
+    margin-top: 5px;
+    animation: imgAnimationCascade 3s forwards;
+}
+.divUñasPromos{
+ background-color: black;
+ color: white;
+ width: 50%;
+ height: 100%;
+}
+.divPestañasPromos{
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 100%;
+}
+.imgPromos{
+    width: 30%;
+    height: auto;
+}
+
+@keyframes imgAnimationCascade{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes romboLashesAnim{
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+.divForInstaAndFacebookPost{
+    background: linear-gradient(to right, #c42b9b, #277eed ) ;
+    flex-wrap: wrap;
+    background-size: 200%;
+    animation: movingBackground 10s infinite;
+    transition: background-size 3s;
+}
+@keyframes movingBackground {
+    0% {
+        background-position: 0% center;
+    }
+    50%{
+        background-position: 100% center;
+    }
+    100%{
+        background-position: 0% center;
+    }
+  }
+
+.pBlackAndGrow{
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.pBlackAndGrow:hover {
+    transform: scale(1.5);
+    color:red;
+}
+
+@media screen and (max-width: 800px){
+    .ejemploMedia{
+        display: block !important;
+    }
+}
+
+.divMainContacto{
+    display: block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.appearContactNumbers{
+    opacity: 0;
+    animation: opacityChanger0To1 1s linear forwards;
+}
+
+@keyframes opacityChanger0To1{
+    100%{
+        opacity: 1;
+    }  
+}
+
+a{
+    color:inherit;
+}
+
+a:hover{
+    color:inherit;
+}
+/*Navbar visibility*/
+.navBarWebsiteVisibility{
+    display: block;
+}
+.navBarDeviceVisibility{
+    display: none;
+}
+/*Carousel height*/
+.carouselHeight{
+    height: 500px;
+}
+/*First carousel*/
+.firstCarousel{
+    display: flex;
+    justify-content: center;
+}
+.firstCarouselLogoImage{
+    width: 250px;
+    height: 100px ;
+}
+.pSizeFirstCarousel{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.marginFirstCarousel{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 700px){
+    .navBarWebsiteVisibility{
+        display: none;
+    }
+    .navBarDeviceVisibility{
+        display: block;
+    }
+    .carouselHeight{
+        height: 150px;
+    }
+    .firstCarouselLogoImage{
+        width: 100px;
+        height: 30px ;
+    }
+    .pSizeFirstCarousel{
+        font-size: 8px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+        margin-bottom: 3px;
+    }
+
+    .marginFirstCarousel{
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+
+    .divImgForCascadeAnimation{
+        width: 15%;
+    }
+
+    .divUñasPromos{
+        width: 100%;
+       }
+       
+    .divPestañasPromos{
+        width: 100%;
+    }
+   
+}
+
+/*Navbar for devices*/
+.iconHomeRounded{
+    border-radius: 50%;
+    border: black 1px solid;
+}
+
+.menuToShow{
+    top: 80px;
+   
+    display: block;
+    background-color: white;
+    position: absolute;
+    animation: modifyHeightFrom0To100 3s linear forwards;    
+    z-index: 10;
+}
+.menuHidden{
+    display: none;
+    height: 0px;
+}
+
+@keyframes modifyHeightFrom0To100{
+    100%{
+        height: fit-content;
+    }
+}
+
+.borderBottom{
+    border-bottom: black 1px solid;
+}
+
+/*fotos de promociones*/
+.photosPromo{
+    width: 350px;
+    height: auto;
+    transition: width .2s;
+}
+.photosPromo:hover{
+    width:450px;
+}
+.promoAnimation1{
+    opacity:0;
+    animation: appearFromTheLeft 1s linear 2s forwards;
+    transform: translateX(-70px);
+}
+
+@keyframes appearFromTheLeft{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+       
+    }
+}
+
+.promoAnimation2{
+    opacity:0;
+    animation: appearFromTheLeft 1s linear 2s forwards;
+    transform: translateY(-70px);
+}
+
+@keyframes appearFromTheBottom{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.promoAnimation3{
+    opacity:0;
+    animation: appearFromTheRight 1s linear 2s forwards;
+    transform: translateX(70px);
+}
+
+@keyframes appearFromTheRight{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+       
+    }
+}
+
+.imgRimali{
+    opacity:0;
+    animation: appearFromTheRight 1s linear 4s forwards;
+    transform: translateX(70px);
+}
+.divRimali{
+    display: flex;
+    background: linear-gradient(to right, white 85%, #52ae47 99%);
+}
+.divRimaliElement1{
+    width: 50%;
+}
+.divRimaliElement2{
+    width: 50%;
+}
+.textRimali{
+    font-size: 20px;
+}
+.imgRimaliLogo{
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px){
+    .divRimali{
+        display: block;
+    }
+    .textRimali{
+        font-size:15px;
+    }
+    .divRimaliElement1{
+        width: 100%;
+    }
+    .divRimaliElement2{
+        width: 100%;
+    }
+    .imgRimali{
+        width: 80%;
+        height: auto;
+    }
+    .divPromosPromociones{
+        display: block;
+    }
+}
+
+.divPromosPromociones{
+    display: flex; 
+}
